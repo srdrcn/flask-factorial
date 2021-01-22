@@ -8,8 +8,8 @@
             "image": "271867616940.dkr.ecr.us-east-2.amazonaws.com/factorial-app:latest",
             "portMappings": [
                 {
-                    "containerPort": 3000,
-                    "hostPort": 3000,
+                    "containerPort": 3080,
+                    "hostPort": 3080,
                     "protocol": "tcp"
                 }
             ],
