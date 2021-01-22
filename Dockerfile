@@ -1,7 +1,6 @@
 FROM python:3-alpine
-WORKDIR /service
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-COPY . ./
+WORKDIR /project
+ADD . /project
+RUN pip3 install -r requirements.txt
 EXPOSE 3080
 ENTRYPOINT ["python3", "app.py"]
